@@ -1,4 +1,7 @@
 ## Useful Applications / Projects
+Day 54: [Function Run Speed Checker](/Intermediate/day54_FlaskBasicandDecorater/function_speed.py):【Decoration Function, time module】
+- Calculate how many seconds the function run can cost by using decorate function.
+  
 Day 53: [Rent Seeker (Data Entry Job Automation)](/Intermediate/day53_RentSeeker/main.py):【Selenium, BeautifulSoup module, Google Form, Web Scraping】
 - Gather rent information from Website according to the given requirements.
 - Turn these information to Google Form and create excel of information in Google Sheet.
