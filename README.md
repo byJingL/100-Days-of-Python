@@ -1,4 +1,10 @@
 ## Useful Applications / Projects
+Day 55: [Higher and Lower Web Game](/Intermediate/day55_HigherLowerGamewithFlask/server.py):【Flask, HTML, Parser URL】
+- User can play guessing number game in web and get cute gifs as feedback.
+
+Day 55: [Function Explaination Decorator](/Intermediate/day55_FlaskandDecorator/functionDecorator.py):【Decoration Function】
+- Explain any function in detail with function name, inputs and results.
+
 Day 54: [Function Run Speed Checker](/Intermediate/day54_FlaskBasicandDecorater/function_speed.py):【Decoration Function, time module】
 - Calculate how many seconds the function run can cost by using decorate function.
   

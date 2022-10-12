@@ -17,7 +17,7 @@ ZILLOW_LINK = 'https://www.zillow.com/homes/for_rent/?searchQueryState=%7B%22pag
               '%22%3A%7B%22value%22%3Afalse%7D%2C%22cmsn%22%3A%7B%22value%22%3Afalse%7D%2C%22fsba%22%3A%7B%22value' \
               '%22%3Afalse%7D%7D%2C%22isListVisible%22%3Atrue%7D'
 
-# ----------------------Step 1. Scraping ren info website----------------------#
+# ----------------------Step 1. Scraping rent info website----------------------#
 headers = {
     "Accept-Language": os.environ.get('Accept_Language'),
     "User-Agent": os.environ.get('User_Agent'),
