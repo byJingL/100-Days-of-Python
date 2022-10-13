@@ -1,4 +1,10 @@
 ## Useful Applications / Projects
+Day 56: [Personal Name Card](/Intermediate/day56_PersonalNameCard/server.py):【Flask, HTML/CSS】
+- Create web name card based on pre-built template in [HTML5up](https://html5up.net/). Preview is [here](/Intermediate/day56_PersonalNameCard/preview.png).
+
+Day 56: [Personal Website](/Intermediate/day56_PersonalWeb/sever.py):【Flask, HTML/CSS】
+- Render personal website buit in day44 with Flask.
+
 Day 55: [Higher and Lower Web Game](/Intermediate/day55_HigherLowerGamewithFlask/server.py):【Flask, HTML, Parser URL】
 - User can play guessing number game in web and get cute gifs as feedback.
 
