@@ -1,4 +1,7 @@
 ## Useful Applications / Projects
+Day 57: [Blog Website](/Intermediate/day57_WebBlogwithJinja/main.py):【Flask, Jinja】
+- Create a blog website including homepage and blog pages. Preview is [here](/Intermediate/day57_WebBlogwithJinja/previewhomepage.png) and [here](/Intermediate/day57_WebBlogwithJinja/previewblogpage.png).
+
 Day 56: [Personal Name Card](/Intermediate/day56_PersonalNameCard/server.py):【Flask, HTML/CSS】
 - Create web name card based on pre-built template in [HTML5up](https://html5up.net/). Preview is [here](/Intermediate/day56_PersonalNameCard/preview.png).
 
