@@ -1,0 +1,149 @@
+/* id selector */
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    /* bold */
+    font-weight: 700; 
+}
+
+p {
+    color: #8f8f8f;
+    font-weight: 100;
+}
+
+
+/* Headings */
+.big-heading {
+    font-family: 'Montserrat', sans-serif;
+    /* black */
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.section-heading {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+/* Paddings- Container */
+.container-fluid {
+    padding: 6% 15%;
+}
+
+/* Sections Pattern */
+.colored-section {
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white-section {
+    background-color: white;
+}
+
+/* Navigation Bar */
+.navbar{
+    padding: 0 0 4.5rem;
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+/* Download Button*/
+.download-button{
+    margin: 5% 3% 5% 0%;
+}
+
+/* Title Section */
+#title .container-fluid {
+    padding: 3% 15% 6%;
+    text-align: left;
+}
+.title-image{
+    width: 20%;
+    transform: rotate(20deg);
+    position: absolute;
+    right: 23%;
+}
+
+/* Features Section*/
+#features{
+    position: relative;
+}
+.each-feature{
+    padding: 5%;
+}
+.feature-title {
+    font-size: 1.5rem;
+}
+.features-icon {
+    font-size: 3em;
+    color: #ef8172;
+    margin-bottom: 10%;   
+}
+.features-icon:hover {
+    color: #ff4c68;
+}
+
+/* Carousel Section */
+.testimonial-text {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* Press Section */
+#press{
+    padding-bottom: 3%;
+}
+.each-press{    
+    width: 12%;
+    margin: 20px 20px 50px;
+}
+
+/* Price Section */
+#pricing{
+    padding: 100px;
+}
+.pricing-col{
+    padding: 3% 2%;
+}
+.pricing-text {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+/* CTA Section */
+
+/* Footer Section */
+.footer-icon{
+    margin: 20px 10px;
+}
+
+
+@media (max-width:1019px) {
+    #title .container-fluid{
+        text-align: center;
+    }
+    .title-image {
+        width: 60%;
+        position: static;
+        transform: rotate(0);
+    }
+}
