@@ -1,4 +1,10 @@
-## Useful Applications / Projects
+# Useful Applications / Projects
+## Advanced Level
+Day 59-Day 60: [Blog Website](/Advanced/day59-60_UpgradedBlog/main.py):【Flask, Jinja, Bootstrap, HTML Form, smtplib module】
+- Upgrad the blog buit in Day57 with Boostrap template from [Start Bootstrap's website]().
+- Get the contact form to work and send email to blog owner when visitors use contact form.
+
+## Intermediate Level
 Day 58: [Web App Website](/Intermediate/day58_Boostrap/index.html):【Bootstrap, Advanced CSS, [Google Font](https://fonts.google.com/), [Font Awesome](https://fontawesome.com/)】
 - Create a introduction website for a web App. 
   
