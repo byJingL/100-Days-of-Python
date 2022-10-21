@@ -1,7 +1,10 @@
 # Useful Applications / Projects
 ## Advanced Level
+Day 61: [Secrets Web ](/Advanced/day61_SecretsWebwithWTForm/main.py):【Flask-WTForm, Flask-Bootstrap, Jinja Template Inheritance】
+- Build a Log-in check website using Flask-WTForm, Flask-Bootstrap and Jinja Template Inheritance
+  
 Day 59-Day 60: [Blog Website](/Advanced/day59-60_UpgradedBlog/main.py):【Flask, Jinja, Bootstrap, HTML Form, smtplib module】
-- Upgrad the blog buit in Day57 with Boostrap template from [Start Bootstrap's website]().
+- Upgrad the blog buit in Day57 with Boostrap template from [Start Bootstrap's website](https://startbootstrap.com/previews/clean-blog).
 - Get the contact form to work and send email to blog owner when visitors use contact form.
 
 ## Intermediate Level
