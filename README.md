@@ -1,6 +1,10 @@
 # Useful Applications / Projects
 ## Advanced Level
-Day 61: [Secrets Web ](/Advanced/day61_SecretsWebwithWTForm/main.py):【Flask-WTForm, Flask-Bootstrap, Jinja Template Inheritance】
+Day 62: [Café Library](/Advanced/day62_WIFIandCoffeProject/main.py):【Flask, WTForm, Flask-Bootstrap, CSV】
+- Build a website list some café nearby, includ relevent ionformation such as location, opening time, WIFI situation, etc.
+- User can add new café to database and check all cafés.
+
+Day 61: [Secrets Web](/Advanced/day61_SecretsWebwithWTForm/main.py):【Flask-WTForm, Flask-Bootstrap, Jinja Template Inheritance】
 - Build a Log-in check website using Flask-WTForm, Flask-Bootstrap and Jinja Template Inheritance
   
 Day 59-Day 60: [Blog Website](/Advanced/day59-60_UpgradedBlog/main.py):【Flask, Jinja, Bootstrap, HTML Form, smtplib module】
