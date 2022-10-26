@@ -1,5 +1,12 @@
 # Useful Applications / Projects
 ## Advanced Level
+Day 64: [Top 10 Movies](/Advanced/day64_Top10Movies/main.py):【Flask, SQLite, SQLAlchemy, Flask-WTForm, TMDB API】
+- Create a website list my top 10 movies, showing the title, poster, overview, rating, review and ranking of them.
+- Every movie can be updated and deleted. New movie can be added through [TMDB](https://www.themoviedb.org/) API.
+
+Day 63: [Virtial Bookshelf](/Advanced/day63_VirtualBookshelfwithSQLite/main.py):【Database, SQLite, SQLAlchemy, Flask-WTForm】
+- Build a website bookshelf with SQLite database. User can add new book ratingds, edit the rating and delete it.
+
 Day 62: [Café Library](/Advanced/day62_WIFIandCoffeProject/main.py):【Flask, WTForm, Flask-Bootstrap, CSV】
 - Build a website list some café nearby, includ relevent ionformation such as location, opening time, WIFI situation, etc.
 - User can add new café to database and check all cafés.
