@@ -1,6 +1,6 @@
 # Useful Applications / Projects
 ## Advanced Level
-Day 65: [Nearby Café API](/Advanced/day65_CafeAPI/main.py):【API RESTful, Flask, SQLite, SQLAlchemy】
+Day 65: [Nearby Café API](/Advanced/day65_CafeAPI/main.py):【RESTful API, Flask, SQLite, SQLAlchemy】
 - Create an API for users to access a database on nearby cafés. The information include café name, location, coffee price, WIFI availability, ect.
 - User can use API by reading this [document](https://documenter.getpostman.com/view/24083770/2s8YCgDY7B).
 
