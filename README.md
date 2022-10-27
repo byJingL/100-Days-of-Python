@@ -1,6 +1,9 @@
 # Useful Applications / Projects
 ## Advanced Level
-Day 65: [Nearby Café API](/Advanced/day65_CafeAPI/main.py):【RESTful API, Flask, SQLite, SQLAlchemy】
+Day 67: [RESRful Blog](/Advanced/day67_RESTfulBlog/main.py):【RESTful Routing, Flask, SQLite, SQLAlchemy, Flask-WTForm】
+- Create a blog website with database. User can create new post and edit or delete past posts.
+
+Day 66: [Nearby Café API](/Advanced/day66_CafeAPI/main.py):【RESTful API, Flask, SQLite, SQLAlchemy】
 - Create an API for users to access a database on nearby cafés. The information include café name, location, coffee price, WIFI availability, ect.
 - User can use API by reading this [document](https://documenter.getpostman.com/view/24083770/2s8YCgDY7B).
 
