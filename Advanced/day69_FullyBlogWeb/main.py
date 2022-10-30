@@ -10,6 +10,8 @@ from functools import wraps
 # relationship database
 from sqlalchemy import Table, Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship
+#
+from flask_gravatar import Gravatar
 
 today = datetime.datetime.now().strftime("%B %d,%Y")
 
@@ -20,6 +22,8 @@ ckeditor = CKEditor(app)
 Bootstrap(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
+gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False,
+                    force_lower=False, use_ssl=False, base_url=None)
 
 
 # create user loader
@@ -34,13 +38,14 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 
-# relationship database
-# Configure table
+# Configure table / Relationship database
 # Parent
 class User(UserMixin, db.Model):
     __tablename__ = 'user'
     id = db.Column(db.Integer, primary_key=True)
-    blog_posts = relationship("BlogPost", back_populates="user")
+    # Parent for BlogPost
+    posts = relationship("BlogPost", back_populates="author")
+    # Parent for comment
     comments = relationship("Comment", back_populates="comment_user")
 
     email = db.Column(db.String(250), unique=True, nullable=False)
@@ -48,15 +53,17 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(250), nullable=False)
 
 
-# Child
-# Also Parent for comment
+# Child/Parent
 class BlogPost(db.Model):
     __tablename__ = 'blog_post'
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(Integer, ForeignKey('user.id'))
-    user = relationship("User", back_populates="blog_posts")
+    # Child for User
+    author_id = db.Column(Integer, db.ForeignKey('user.id'))
+    author = relationship("User", back_populates="posts")
+    # Parent for Comment
+    comments = relationship("Comment", back_populates="comment_blog")
 
-    title = db.Column(db.String(250), unique=True, nullable=False)
+    title = db.Column(db.String(250), nullable=False)
     subtitle = db.Column(db.String(250), nullable=False)
     date = db.Column(db.String(250), nullable=False)
     body = db.Column(db.Text, nullable=False)
@@ -67,14 +74,18 @@ class BlogPost(db.Model):
 class Comment(db.Model):
     __tablename__ = 'comment'
     id = db.Column(db.Integer, primary_key=True)
-    comment_user_id = db.Column(Integer, ForeignKey('user.id'))
+    # Child for User
+    comment_user_id = db.Column(Integer, db.ForeignKey('user.id'))
     comment_user = relationship("User", back_populates="comments")
+    # Child for BlogPost
+    comment_blog_id = db.Column(Integer, db.ForeignKey('blog_post.id'))
+    comment_blog = relationship("BlogPost", back_populates="comments")
 
     text = db.Column(db.String(1000), nullable=False)
 
 
-with app.app_context():
-    db.create_all()
+# with app.app_context():
+#     db.create_all()
 
 
 # ------------------ Web Set------------------#
@@ -92,6 +103,27 @@ def get_all_posts():
     print(current_user.get_id())
     posts = db.session.query(BlogPost).all()
     return render_template("index.html", all_posts=posts, current_user=current_user)
+
+
+@app.route("/post/<int:post_id>", methods=['GET', 'POST'])
+def show_post(post_id):
+    requested_post = BlogPost.query.get(post_id)
+    comment_form = CommentForm()
+    if comment_form.validate_on_submit():
+        if not current_user.is_authenticated:
+            flash('Please login or register to comment!')
+            return redirect(url_for('login'))
+        else:
+            if current_user.is_authenticated:
+                new_comment = Comment(
+                    comment_user_id=int(current_user.get_id()),
+                    comment_blog_id=post_id,
+                    text=comment_form.body.data
+                )
+                db.session.add(new_comment)
+                db.session.commit()
+                return redirect(url_for('show_post', post_id=post_id))
+    return render_template("post.html", post=requested_post, form=comment_form)
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -143,22 +175,6 @@ def logout():
     return redirect(url_for('get_all_posts'))
 
 
-@app.route("/post/<int:post_id>", methods=['GET', 'POST'])
-def show_post(post_id):
-    requested_post = BlogPost.query.get(post_id)
-    comment_form = CommentForm()
-    if comment_form.validate_on_submit():
-        if current_user.is_authenticated:
-            new_comment = Comment(
-                comment_user_id=int(current_user.get_id()),
-                blog_id=post_id,
-                text=comment_form.body.data
-            )
-            db.session.add(new_comment)
-            db.session.commit()
-    return render_template("post.html", post=requested_post, form=comment_form)
-
-
 @app.route("/new-post", methods=['POST', 'GET'])
 @ admin_only
 def add_post():
@@ -170,7 +186,7 @@ def add_post():
             date=today,
             body=add_form.body.data,
             img_url=request.form.get('img_url'),
-            user_id=current_user.id,
+            author_id=current_user.id,
         )
         db.session.add(new_post)
         db.session.commit()

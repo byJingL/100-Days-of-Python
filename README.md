@@ -1,10 +1,14 @@
 # Useful Applications / Projects
 ## Advanced Level
-Day 68: [File Download Website](/Advanced/day68_FileDownload/main.py):【Authentication with Flask, Flask-Login, Hashing Password with werkzeug module, Message Flashing】
+Day 69: [Fully Blog Website](/Advanced/day69_FullyBlogWeb/main.py):【Authentication with Flask, Relational Database, Decorator in Flask, Flask Gravatar, Flask Login】
+- Add users to blog website built in Day67. Users who register or sign up can comment on blog posts and all comments will be listed below.
+- Protect Routes to achive only blog owner can add/edit/delete posts.
+
+Day 68: [File Download Website](/Advanced/day68_FileDownload/main.py):【Authentication with Flask, Flask Login, Hashing Password with werkzeug module, Message Flashing】
 - Create a secret website. User with authentication can download file from this website.
 
-Day 67: [RESTful Blog](/Advanced/day67_RESTfulBlog/main.py):【RESTful Routing, Flask, SQLite, SQLAlchemy, Flask-WTForm】
-- Create a blog website with database. User can create new post and edit or delete past posts.
+Day 67: [RESTful Blog Website](/Advanced/day67_RESTfulBlog/main.py):【RESTful Routing, Flask, SQLite, SQLAlchemy, Flask-WTForm】
+- Create a blog website with database. Users can create new post and edit or delete past posts.
 
 Day 66: [Nearby Café API](/Advanced/day66_CafeAPI/main.py):【RESTful API, Flask, SQLite, SQLAlchemy】
 - Create an API for users to access a database on nearby cafés. The information include café name, location, coffee price, WIFI availability, ect.
