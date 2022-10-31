@@ -1,7 +1,8 @@
 # Useful Applications / Projects
+Finish this course except data science part which I have learned before.
 ## Advanced Level
 Day 70: [Hosting Blog Website](https://github.com/byJingL/blog-test):【Heroku, PostgreSQL, gunicorn】
-- Host the blog website on Heroku. Switch the database from SQLite to PostgresSQL. Visite it [here](https://jane-blog-test.herokuapp.com/)
+- Host the blog website on Heroku. Switch the database from SQLite to PostgreSQL. Visite it [here](https://jane-blog-test.herokuapp.com/)
 
 Day 69: [Fully Blog Website](/Advanced/day69_FullyBlogWeb/main.py):【Authentication with Flask, Relational Database, Decorator in Flask, Flask Gravatar, Flask Login】
 - Add users to blog website built in Day67. Users who register or sign up can comment on blog posts and all comments will be listed below.
