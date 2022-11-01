@@ -1,3 +1,4 @@
+# using sheety API to process data in Google docs
 import requests
 sheety_endpoint = "https://api.sheety.co/d65ba2aab1558fc6f0e2790b0514e29f/fightDeals/sheet1"
 users_endpoint = "https://api.sheety.co/d65ba2aab1558fc6f0e2790b0514e29f/fightDeals/users"
