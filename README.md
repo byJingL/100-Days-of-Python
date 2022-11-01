@@ -98,8 +98,7 @@ Day 35: [Rain Alert](/Intermediate/day35_RainAlert/main.py):【 OpenWeatherMap A
 - Email to alert users when it will rain in the following 12 hours.
 
 Day 34: [The GUI Quiz App (Based on Day17)](/Intermediate/day34_GUIQuizApp/main.py):【 API, OOP, Unescape HTML entities, Tkinter 】  
-- Randomly generate 10 questions by Trivia Database.
-- Users can take a True/False question quiz and get the result.  
+- Randomly generate 10 questions by using API of Trivia Database. Users can take a True/False question quiz and get the result. Interface preview can be found [here](/Interface/quizapp.png)
 
 Day 33: [ISS Overhead Notifier](/Intermediate/day33_API_ISSOverheadNotifier/main.py):【 API, smtplib module 】  
 - Send notification emails when International Space Station (ISS) is overhead at nights.
@@ -108,18 +107,15 @@ Day 32: [Auto Birthday Wisher](/Intermediate/day32_AutoBirthdayWisher/main.py):�
 - Update users' "Birthday to remember" list.
 - Send emails to people whose birthday is today based on existing list.
 
-Day 31: [Flashcard](/Intermediate/day31_Flashcard/main.py):【 Tkinter 】  
-- Users can learn English through English-Chinese flash cards.
-- Users' learning process can be updated.
+Day 31: [Flashcard](/Intermediate/day31_Flashcard/main.py):【 Tkinter, Pandas 】  
+- Users can learn English through English-Chinese flash cards and learning process can be updated. Interface preview can be found [here](/Interface/flashcard-1.png) and [here](/Interface/flashcard-2.png)
 
-Day 30: [Advanced Password Manager App](/Intermediate/day30_advanced/main.py):【 Tkinter, Exception catching, JSON data 】  
-- Increase the function that can search saved passwords by website name.
-- Increase exceptions catching and give relative warning.
-
-Day 29: [Password Manager App](/Intermediate/day29_PasswaorManager/main.py):【 Tkinter 】  
+Day 29-30: [Advanced Password Manager App](/Intermediate/day30_PasswaorManagerAdvanced/main.py):【 Tkinter, Exception catching, JSON data, pyperclip】  
 - Generate complex safe password for users.
 - Save specific web/account/password information to a local text file.
+- Create the function that can search saved passwords by website name. Increase exceptions catching and give relative warning.
+- Interface preview can be found [here](/Interface/password-manager.png)
 
 Day 28: [Promodoro Timer App](/Intermediate/day28_Promodoro/main.py):【 Tkinter 】  
-- This is a time management tool using [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique).
+- This is a time management tool using [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). Interface preview can be found [here](/Interface/promodoro-time-app.png)
 
