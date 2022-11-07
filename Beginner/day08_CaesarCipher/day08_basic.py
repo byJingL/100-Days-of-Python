@@ -12,8 +12,10 @@ def greet_with_people(people):
     print("How are you")
     print("You look so happy")
 
-#Important: people is name of varies called "Parameter", what's input called "Argument"
-#Argument gets assigned at the Parameter
+#Important: 
+#Parameters: the name of variables, when define function, create parameters
+#Argument: what's input, when call function, give arguments.
+#Parameter gets assigned from Arguments; Argument assigned to Parameters
 people = input("Who you want to greet? ") 
 greet_with_people(people)
 greet_with_people("Angela")
