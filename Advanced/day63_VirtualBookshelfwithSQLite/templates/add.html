@@ -7,13 +7,12 @@
 <body>
     <form action="{{ url_for('add') }}" method="POST">
         <label>Book Name</label>
-        <input type="text" name="name">
+        <input name='title' type="text">
         <label>Book Author</label>
-        <input type="text" name="author">
+        <input name='author' type="text">
         <label>Rating</label>
-        <input type="text" name="rate">
+        <input name='rating' type="text">
         <button type="submit">Add Book</button>
     </form>
-    <a href="{{ url_for('home') }}">Return to home</a>
 </body>
 </html>
